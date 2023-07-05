@@ -29,7 +29,7 @@ public class AuthorDao implements IAuthorDao {
 
             int rowsInserted = stmt.executeUpdate();
             if(rowsInserted > 0) {
-                System.out.println("Um novo autor foi inserido com sucesso.");
+                System.out.println("Um novo autor foi inserido com sucesso!");
             }
 
             stmt.close();
@@ -50,7 +50,7 @@ public class AuthorDao implements IAuthorDao {
 
             int rowsInserted = stmt.executeUpdate();
             if(rowsInserted > 0) {
-                System.out.println("Autor atualizado com sucesso.");
+                System.out.println("Autor atualizado com sucesso!");
             }
 
             stmt.close();
@@ -112,7 +112,7 @@ public class AuthorDao implements IAuthorDao {
 
             int deletedRows = stmt.executeUpdate();
             if(deletedRows > 0) {
-                System.out.println("Autor deletado com sucesso.");
+                System.out.println("Autor deletado com sucesso!");
             }
         } catch(SQLException e) {
             throw new RuntimeException(e);
