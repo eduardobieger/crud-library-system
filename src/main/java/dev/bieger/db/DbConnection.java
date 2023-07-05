@@ -25,7 +25,7 @@ public class DbConnection {
     }
 
     private static Properties loadProperties() {
-        try(FileInputStream fs = new FileInputStream("src/com/dev/bieger/db/db.properties")) {
+        try(FileInputStream fs = new FileInputStream("src/main/java/dev/bieger/db/db.properties")) {
             Properties props = new Properties();
             props.load(fs);
             return props;
