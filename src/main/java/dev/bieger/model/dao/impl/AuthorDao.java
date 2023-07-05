@@ -70,10 +70,10 @@ public class AuthorDao implements IAuthorDao {
             System.out.println("\n\nLista de autores:\n");
             while(stmt.next()) {
                 String id = stmt.getString(1);
-                String nome = stmt.getString(2);
+                String name = stmt.getString(2);
 
                 String output = "ID %s: %s";
-                System.out.println(String.format(output, id, nome));
+                System.out.println(String.format(output, id, name));
             }
             System.out.println("\n");
         } catch(SQLException e) {
