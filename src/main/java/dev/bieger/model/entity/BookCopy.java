@@ -3,7 +3,7 @@ package dev.bieger.model.entity;
 public class BookCopy {
 
     private String isbn;
-    private String bookId;
+    private Long bookId;
     private Long publisherId;
     private int year;
     private int status;
@@ -16,11 +16,11 @@ public class BookCopy {
         this.isbn = isbn;
     }
 
-    public String getBookId() {
+    public Long getBookId() {
         return bookId;
     }
 
-    public void setBookId(String bookId) {
+    public void setBookId(Long bookId) {
         this.bookId = bookId;
     }
 
