@@ -10,7 +10,7 @@ public class UserDao implements IUserDao {
 
     private final Connection conn;
 
-    public UserDao(Connection conn) {
+    public UserDao() {
         this.conn = DbConnection.getConnection();
     }
 
