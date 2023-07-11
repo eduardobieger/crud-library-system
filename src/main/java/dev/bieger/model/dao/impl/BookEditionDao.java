@@ -1,21 +1,21 @@
 package dev.bieger.model.dao.impl;
 
 import dev.bieger.db.DbConnection;
-import dev.bieger.model.dao.IBookCopyDao;
-import dev.bieger.model.entity.BookCopy;
+import dev.bieger.model.dao.IBookEditionDao;
+import dev.bieger.model.entity.BookEdition;
 
 import java.sql.*;
 
-public class BookCopyDao implements IBookCopyDao {
+public class BookEditionDao implements IBookEditionDao {
 
     private final Connection conn;
 
-    public BookCopyDao() {
+    public BookEditionDao() {
         this.conn = DbConnection.getConnection();
     }
 
     @Override
-    public void insertBookCopy(BookCopy bookCopy) {
+    public void insertBookCopy(BookEdition bookCopy) {
         String sql = "INSERT INTO book_copy (isbn, book_id, publisher_id, year, status) VALUES (?, ?, ?, ?, ?)";
 
         try {
@@ -39,7 +39,7 @@ public class BookCopyDao implements IBookCopyDao {
     }
 
     @Override
-    public void updateBookCopy(String isbn, BookCopy bookCopy) {
+    public void updateBookCopy(String isbn, BookEdition bookCopy) {
         String sql = "UPDATE book_copy SET book_id=?, publisher_id=?, year=?, status=? WHERE isbn=?";
 
         try {

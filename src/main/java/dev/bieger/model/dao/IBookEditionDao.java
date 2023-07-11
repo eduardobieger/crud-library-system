@@ -1,11 +1,11 @@
 package dev.bieger.model.dao;
 
-import dev.bieger.model.entity.BookCopy;
+import dev.bieger.model.entity.BookEdition;
 
-public interface IBookCopyDao {
+public interface IBookEditionDao {
 
-    void insertBookCopy(BookCopy bookCopy);
-    void updateBookCopy(String isbn, BookCopy bookCopy);
+    void insertBookCopy(BookEdition bookCopy);
+    void updateBookCopy(String isbn, BookEdition bookCopy);
     void updateStatusBookCopy(String isbn, int status);
     void selectAllBookCopy();
     void selectByIsbnBookCopy(String findIsbn);

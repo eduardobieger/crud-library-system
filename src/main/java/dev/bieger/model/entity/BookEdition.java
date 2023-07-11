@@ -1,6 +1,6 @@
 package dev.bieger.model.entity;
 
-public class BookCopy {
+public class BookEdition {
 
     private String isbn;
     private Long bookId;
